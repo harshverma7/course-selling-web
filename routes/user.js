@@ -3,7 +3,7 @@ const userRouter = express.Router();
 const { z } = require("zod");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-const { JWT_ADMIN_PASSWORD, JWT_USER_PASSWORD } = require("../config");
+const { JWT_USER_PASSWORD } = require("../config");
 
 const { userModel } = require("../db");
 const { validateSignupBody } = require("../middlewares/signupvalidation");
